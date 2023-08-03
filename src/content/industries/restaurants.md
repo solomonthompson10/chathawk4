@@ -165,4 +165,3 @@ members:
       field: Software Engineer
       image: "/images/users/user-3.png"
 ---
-Managing restaurant communication can be time-consuming and take away from serving your customers. 

@@ -2,8 +2,8 @@
 title: Education
 page_title: "Education"
 banner:
-  title: Connects with all your other tools to create a smooth experience.
-  content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.
+  title: Answering phone calls and emails regarding your school can be time consuming
+  content: ChatHawk specializes in creating custom chatbots to automate your school’s communication, saving you valuable time!
   image: "/images/industries/education_1.png"
   button:
     label: Book A Demo
@@ -159,4 +159,4 @@ members:
       field: Software Engineer
       image: "/images/users/user-3.png"
 ---
-Has your school spent unnecessary time answering phone calls and emails regarding admissions and general school questions?
+
