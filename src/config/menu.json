@@ -1,0 +1,66 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Industries",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Education",
+          "url": "/industries/education"
+        },
+        {
+          "name": "Real Estate",
+          "url": "/industries/real-estate"
+        },
+        {
+          "name": "Restaurants",
+          "url": "/industries/restaurants"
+        },
+        {
+          "name": "Accounting",
+          "url": "/industries/accounting"
+        }
+      ]
+    },
+    {
+      "name": "Features",
+      "url": "/features"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "FAQs",
+      "url": "/faq"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "Features",
+      "url": "/features"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

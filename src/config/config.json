@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "ChatHawk",
+    "base_url": "https://chathawk.io",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/siteicon.png",
+    "logo": "/images/hawk_logo.png",
+    "logo_width": "137",
+    "logo_height": "41",
+    "logo_text": "Chat Hawk"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 100,
+    "blog_folder": "blog"
+  },
+
+  "call_to_action": {
+    "title": "Book a demo today and unlock a free sample chatbot  for your business!",
+    "description": "",
+    "button": {
+      "label": "Book A Demo",
+      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  },
+
+  "params": {
+    "footer_description": "",
+    "email": "info@chathawk.ai",
+    "location": "Los Angeles, CA",
+    "phone": "+704-555-0127",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "pinwheel astro"
+  }
+}

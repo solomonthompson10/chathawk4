@@ -1,0 +1,40 @@
+---
+import Shape from "@components/Shape.astro";
+import Gallery from "@components/industries/Gallery.astro";
+import PageHeader from "@components/industries/PageHeader.astro";
+import Works from "@components/industries/Works.astro";
+import Base from "@layouts/Base.astro";
+import { getEntryBySlug } from "astro:content";
+
+const about = await getEntryBySlug("industries", "index");
+const { gallery, features } = about.data;
+const page_data = {
+  ...about.data,
+  content: about.body,
+};
+---
+
+<Base
+  title={about.data.title}
+  meta_title={about.data.meta_title}
+  description={about.data.description}
+  image={about.data.image}
+>
+  <Shape />
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[768px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+      <!-- <CounterComponent counter={counter} /> -->
+      <!-- benifit -->
+
+      <!-- our works -->
+      <Works features={features} />
+      <!-- gellary -->
+      <Gallery gallery={gallery} />
+      <!-- our members -->
+      <!-- <OurMembers members={members} /> -->
+    </div>
+  </section>
+</Base>
