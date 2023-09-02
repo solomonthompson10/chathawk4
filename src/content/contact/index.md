@@ -1,4 +1,4 @@
 ---
 title: Contact
-page_title: Get in touch with our team<br/>ChatHawk team
+page_title: Get in touch with our team!
 ---

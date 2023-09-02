@@ -1,6 +1,6 @@
 ---
 title: Features
-page_title: Explore the Wonders of Our Features!
+page_title: Elevate your business with our premium offerings! 
 
 
 # perfomance

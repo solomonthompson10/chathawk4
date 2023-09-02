@@ -142,7 +142,7 @@ benifits:
     description: 9 out of 10 customers want to use messaging to communicate with businesses
     image: "/images/how-it-work/real-data.png"
 feature_service:
-    title: Explore how ChatHawk's AI chatbox can revolutionize your business!
+    title: Explore how ChatHawk's AI chatbot can revolutionize your business!
     # description: Are you tired of spending valuable time answering questions about store hours, appointments, and pricing? 
     image: "/images/features/feature-img-1.png"
     list:
