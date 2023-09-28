@@ -1,10 +1,7 @@
 ---
-import Shape from "@components/Shape.astro";
-import Base from "@layouts/Base.astro";
-import Cta from "@partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
-const about = await getEntryBySlug("industries", "accounting");
+const about = await getEntryBySlug("demo", "newempire");
 const { gallery, features } = about.data;
 const page_data = {
   ...about.data,
@@ -19,24 +16,5 @@ const page_data = {
   image={about.data.image}
 >
   <Shape />
-  <section class="page-hero">
-    <div class="container">
-      <div class="page-hero-content mx-auto max-w-[768px] text-center">
-        <PageHeader page_data={page_data} />
-      </div>
-      <FeatureBanner features={about.data}/>
-
-      <!-- <CounterComponent counter={counter} /> -->
-      <!-- benifit -->
-
-      <!-- our works -->
-      <Works features={features} />
-      <!-- gellary -->
-      <!-- <Gallery gallery={gallery} /> -->
-      <!-- <ProjecManagement features={about.data}/> -->
-      <Cta/>
-      <!-- our members -->
-      <!-- <OurMembers members={members} /> -->
-    </div>
-  </section>
+<h1>test</h1>
 </Base>
