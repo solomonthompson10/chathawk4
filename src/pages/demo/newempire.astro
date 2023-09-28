@@ -2,19 +2,19 @@
 import { getEntryBySlug } from "astro:content";
 
 const about = await getEntryBySlug("demo", "newempire");
-const { gallery, features } = about.data;
-const page_data = {
-  ...about.data,
-  content: about.body,
-};
 ---
 
-<Base
-  title={about.data.title}
-  meta_title={about.data.meta_title}
-  description={about.data.description}
-  image={about.data.image}
->
-  <Shape />
-<h1>test</h1>
-</Base>
+<img style="width:100%;" src="/images/newempire.jpg">
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '650e77c3f9c7b600075cccf2' },
+          url: 'https://general-runtime.voiceflow.com/',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
