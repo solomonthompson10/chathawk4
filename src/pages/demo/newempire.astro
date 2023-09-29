@@ -4,7 +4,37 @@ import { getEntryBySlug } from "astro:content";
 const about = await getEntryBySlug("demo", "newempire");
 ---
 
-<img style="width:100%;" src="/images/newempire.webp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .img-holder {
+      max-width: 100vw; /* Set the maximum width of the container to 100vw */
+      overflow: hidden; /* Hide any overflowing content */
+    }
+    .img-holder img {
+      width: 100vw; /* Set the width of the picture to 100% of its container */
+      height: auto;
+      display: block; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <div class={'img-holder'}>
+    <img src="/images/new_empire_snap-s.webp"
+     srcset="/images/new_empire_snap-s.webp 420w,
+             /images/new_empire_snap-m.webp 768w,
+             /images/new_empire_snap-l.webp 1200w"
+     sizes="(max-width: 420px) 100vw, (max-width: 768px) 50vw, 1200px"
+     alt="New Empire snapshot">
+
+  </div>
 <script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -18,3 +48,4 @@ const about = await getEntryBySlug("demo", "newempire");
       v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
+</body>
