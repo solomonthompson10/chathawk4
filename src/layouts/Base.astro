@@ -142,23 +142,9 @@ const { title, meta_title, description, image, noindex, canonical } =
     ></script>
     <script is:inline src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.dots.min.js"
     ></script>
-    <script>
-      VANTA.DOTS({
-        el: "#vanta-animation",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color2: 0xfafafa,
-        backgroundColor: 0xfafafa
-      })
-      </script>
-    <!-- <script>
-      VANTA.WAVES("#my-background");
-    </script> -->
+    
+    <link rel="stylesheet" href="/app.css" />
+
     <!-- Google tag (gtag.js) -->
   <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-3EJGK8MJ0X"></script>
 
@@ -174,10 +160,13 @@ const { title, meta_title, description, image, noindex, canonical } =
     <TwSizeIndicator />
     <div>
       <Header />
-    <main id="main-content">
+    <main id="main-content" class="transition-main">
       <slot />
     </main>
     <Footer />
     </div>
+
+    <script type="module" src="/app.js"></script>
+    <div class="overlay transition-overlay"></div>
   </body>
 </html>

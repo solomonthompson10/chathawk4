@@ -1,0 +1,52 @@
+---
+import { getEntryBySlug } from "astro:content";
+
+const about = await getEntryBySlug("demo", "cthomes");
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/imgix.js/4.0.1/imgix.min.js"
+  ></script>
+  <script type="text/javascript">
+    imgix.config.host = 'www.chathawk.ai';
+    imgix.config.useHttps = true;
+  </script>
+  <style>
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .img-holder {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .img-holder img {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class={'img-holder'}>
+  <picture>
+    <source
+     srcset="/images/cthomes_l.webp"
+     media="(min-width: 1280px)"
+    >
+    <source
+      srcset="/images/cthomes_m.webp"
+      media="(min-width: 1024px)"
+    >
+    <source
+      srcset="/images/cthomes_s.webp"
+      media="(min-width: 320px)"
+    >
+    <img src="/images/cthomes_l.webp">
+  </picture>
+</div>
+<!-- Bot script -->
+</body>

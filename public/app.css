@@ -1,0 +1,96 @@
+header {
+    transition: all 400ms ease-in-out;
+    z-index: 999999 !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    transform: scale(1.02);
+}
+
+header.header-sticky {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: scale(1);
+}
+
+.nav-item .nav-link:after {
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+}
+
+.nav-item .nav-link.active:after {
+    opacity: 1;
+}
+
+html.is-animating {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+html.swup-enabled .transition-main {
+    transition: all 400ms ease-in-out;
+    opacity: 1;
+}
+html.is-changing .transition-main {
+    opacity: .5;
+}
+
+html.is-animating.is-leaving .transition-main {
+    opacity: 0;
+}
+
+html.is-animating.is-rendering .transition-main {
+    opacity: 0;
+}
+
+body {
+    --swup-overlay-theme-color: rgba(63, 63, 63, 0.085);
+    --swup-overlay-theme-duration: .4s;
+    --swup-overlay-theme-delay: .2s;
+    --swup-overlay-theme-scale: 1.2;
+    --swup-overlay-theme-skew: 15deg;
+}  
+
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transform: translate3d(0, calc(-1 * 100% * var(--overlay-direction, 1)), 0);
+    pointer-events: none;
+}
+
+html.is-changing .transition-overlay {
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+}
+
+html.is-animating .transition-overlay {
+    transform: translate3d(0, 0, 0);
+}
+
+html.is-rendering .transition-overlay {
+    transform: translate3d(0, calc(var(--overlay-direction, 1) * 100%), 0);
+}
+
+html.to-back {
+    /* --overlay-direction: -1; */
+}
+
+html.swup-enabled .swup-progress-bar {
+    height: 8px !important;
+    background-color: linear-gradient(184.78deg, #FFB700 7.64%, #fbe66d 120.07%) !important;
+}
+
+html.is-animating .transition-main .floating-bubble-1, html.is-animating .transition-main .floating-bubble-2, html.is-animating .transition-main .floating-bubble-3 {
+    transition: all 600 ease-in-out!important;
+}
+html.is-animating.is-leaving .transition-main .floating-bubble-1 {
+    transform: translateX(10vw)!important;
+}
+html.is-animating.is-rendering .transition-main .floating-bubble-1 {
+    transform: translateX(0);
+}
+.swup-transition-overlay {
+    z-index: 10;
+}
