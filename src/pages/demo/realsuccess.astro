@@ -1,0 +1,66 @@
+---
+import { getEntryBySlug } from "astro:content";
+
+const about = await getEntryBySlug("demo", "realsuccess");
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/imgix.js/4.0.1/imgix.min.js"
+  ></script>
+  <script type="text/javascript">
+    imgix.config.host = 'www.chathawk.ai';
+    imgix.config.useHttps = true;
+  </script>
+  <style>
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .img-holder {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .img-holder img {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class={'img-holder'}>
+    <picture>
+      <source
+      srcset="/images/realsuccess_l.webp"
+      media="(min-width: 1280px)"
+      >
+      <source
+        srcset="/images/realsuccess_m.webp"
+        media="(min-width: 1024px)"
+      >
+      <source
+        srcset="/images/realsuccess_s.webp"
+        media="(min-width: 320px)"
+      >
+      <img src="/images/realsuccess_l.webp">
+    </picture>
+  </div>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '651e435accd3270007818d3b' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+</body>
